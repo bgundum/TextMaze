@@ -37,17 +37,5 @@ public class Cell {
 		this.empty=true;
 		return this.item;
 	}
-	
-	
-	
-	/*
-	 * Possible add-ons:
-	 * 
-	 * -Treasures  * done
-	 * -Traps
-	 * -Enemies
-	 * -Other Players
-	 * 
-	 */
 
 }

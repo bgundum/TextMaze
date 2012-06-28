@@ -1,0 +1,26 @@
+A List of things that need to be done/ could be done will go here.
+
+
+Possible add-ons:
+ 
+    1. Inventory System    
+        -Treasures  * done
+        -items
+        -equipment
+        -weapons
+	
+	2. Traps
+    
+    3. Battle System
+        -Enemies
+        -Player Stats
+            *ATK
+            *DEF
+            *AGL
+        -AILMENTS
+ 
+    4. Other Players
+ 
+ 
+
+ 

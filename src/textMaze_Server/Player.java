@@ -36,18 +36,5 @@ public class Player {
 	public int[] getPosition(){
 		return this.position.clone();
 	}
-	/*
-	 * Possible add-ons:
-	 * 
-	 * -Inventory
-	 *   *items
-	 *   *equipment
-	 *   *weapons
-	 * -Status
-	 *   *ATK
-	 *   *DEF
-	 *   *AGL
-	 *   *AILMENTS
-	 *   
-	 */
+	
 }
