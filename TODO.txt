@@ -1,13 +1,21 @@
 A List of things that need to be done/ could be done will go here.
 
 
+Needs:
+
+    1. Reformat/Clean up code
+    
+
+
+
 Possible add-ons:
  
     1. Inventory System    
         -Treasures  * done
         -items
         -equipment
-        -weapons
+            *weapons
+            *armor
 	
 	2. Traps
     
@@ -18,8 +26,16 @@ Possible add-ons:
             *DEF
             *AGL
         -AILMENTS
+        -Type Alignments
  
     4. Other Players
+    
+    5. Quest/Jobs
+    
+    6. Class System
+        -Warrior
+        -Mage
+        -Thief 
  
  
 
