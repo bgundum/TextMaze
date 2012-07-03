@@ -2,6 +2,7 @@ package client;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class GameClient {
 	
@@ -29,8 +30,8 @@ public class GameClient {
 			Socket s = new Socket(hostname,port);
 			
 			BufferedReader sin = new BufferedReader(new InputStreamReader(s.getInputStream()));
-			PrintWriter sout = new PrintWriter(s.getOutputStream());
-			BufferedReader cin = new BufferedReader(new InputStreamReader(System.in));
+			PrintWriter sout = new PrintWriter(s.getOutputStream());			
+			Scanner cin = new Scanner(System.in);
 			
 			String input=new String();
 			String userName=new String();
@@ -41,7 +42,7 @@ public class GameClient {
 			System.out.println("Welcome to the Dungeon Crawler Prototype");
 			System.out.println("Please enter your username");
 			
-			userName=cin.readLine();
+			userName=cin.next();
 			input="LOGIN:"+userName;
 			rmess=networkCom(sin, sout, input);
 
@@ -56,7 +57,7 @@ public class GameClient {
 				
 				while(true){
 					
-					input=cin.readLine();
+					input=cin.next();
 					if(input.equalsIgnoreCase("Logoff")){
 							
 						input="LOGOFF:"+userName;
@@ -77,7 +78,7 @@ public class GameClient {
 						System.out.println("\nYou can enter move or quit");
 						System.out.println("To move type, 'move' and a direction ");
 						System.out.println("ie. move north");
-						input=cin.readLine();
+						input=cin.next();
 				
 						if(input.equalsIgnoreCase("quit")){
 							String msg="QUITGAME:" +userName;
@@ -109,7 +110,7 @@ public class GameClient {
 								}
 								
 								System.out.println("\nYou can enter move or quit");
-								input=cin.readLine();
+								input=cin.next();
 							}
 						}
 						
